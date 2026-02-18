@@ -1,0 +1,15 @@
+fastapi
+uvicorn[standard]
+pydantic
+pydantic-settings
+influxdb-client[async]
+redis[hiredis]
+apscheduler
+httpx
+firecrawl-py
+groq
+websockets
+pytest
+pytest-asyncio
+pytest-httpx
+pytest-cov
