@@ -1,9 +1,16 @@
-import "./styles/main.css";
+import './styles/main.css';
+import { App } from '@/App';
 
-const app = document.getElementById("app");
-if (app) {
-  app.innerHTML = `
-    <h1>Global Pulse Pro</h1>
-    <p>Loading...</p>
+const root = document.getElementById('app');
+if (root) {
+  root.innerHTML = `
+    <div id="toolbar" class="toolbar">
+      <span class="logo">Global Pulse Pro</span>
+    </div>
+    <div id="map-container" class="map-container"></div>
+    <div id="side-panel" class="side-panel"></div>
   `;
+
+  const app = new App('app');
+  app.init();
 }
